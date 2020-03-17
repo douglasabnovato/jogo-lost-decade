@@ -22,3 +22,11 @@ heroImage.onload = function () {
     heroReady = true;
 };
 heroImage.src = 'images/hero.png';
+
+//imagem do monstro
+var monsterReady = false;
+var monsterImage = new Image();
+monsterImage.onload = function () {
+    monsterReady = true;
+};
+monsterImage.src = 'images/monster.png';
