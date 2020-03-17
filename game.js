@@ -30,3 +30,14 @@ monsterImage.onload = function () {
     monsterReady = true;
 };
 monsterImage.src = 'images/monster.png';
+
+//objetos do jogo
+var hero = {
+    speed: 256 //movimento em pixels por segundo 
+};
+var monster = {};
+var monsterCaught = 0;
+
+// controle do teclado
+var keysDown = {};
+window.addEventListener('keydown');

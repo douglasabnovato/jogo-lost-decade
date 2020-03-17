@@ -28,3 +28,14 @@ monsterImage.onload = function(){
     monsterReady = true;
 };
 monsterImage.src = 'images/monster.png';
+
+//objetos do jogo
+const hero = {
+    speed: 256 //movimento em pixels por segundo 
+};
+const monster = {};
+let monsterCaught = 0;
+
+// controle do teclado
+const keysDown = {};
+window.addEventListener('keydown', )
