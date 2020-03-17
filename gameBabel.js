@@ -11,11 +11,12 @@ const bgImage = new Image();
 bgImage.onload = function(){
     bgReady = true;
 };
-bgImage.src = 'images/background.jpg';
+bgImage.src = 'images/background.png';
 
 //imagem do herói
 let heroReady = false;
 const heroImage = new Image();
 heroImage.onload = function(){
-    heroImage = true;
+    heroReady = true;
 };
+heroImage.src = 'images/hero.png';
