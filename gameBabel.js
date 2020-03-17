@@ -71,4 +71,9 @@ const update = function (modifier){
     if(39 in keysDown){//pressionar a tecla para direita
         hero.x += hero.speed * modifier;
     }
+
+    //os personagens se encostaram
+    if(
+        hero.x <= (monster.x + 32) && monster.x <= (hero.x + 32)        
+    )
 };
