@@ -38,4 +38,37 @@ let monsterCaught = 0;
 
 // controle do teclado
 const keysDown = {};
-window.addEventListener('keydown', )
+window.addEventListener('keydown', function(e){
+    keysDown[e.keyCode] = true;
+},false);
+
+window.addEventListener('keyup', function(e){
+    delete keysDown[e.keyCode];
+},false);
+
+// reseta o jogo quando o jogador pega o monstro
+const reset = function(){
+    hero.x = canvas.width / 2;
+    hero.y = canvas.height / 2;
+
+    //posiciona o monstro randomicamente na tela
+    monster.x = 32 + (Math.random()*(canvas.width - 64));
+    monster.y = 32 + (Math.random()*(canvas.height - 64));
+};
+
+//atualizar os objetos do jogo
+const update = function (modifier){
+    if(38 in keysDown){//pressionar a tecla para cima
+        hero.y -= hero.speed * modifier;
+    }
+    if(40 in keysDown){//pressionar a tecla para baixo
+        hero.y += hero.speed * modifier;
+    }
+
+    if(37 in keysDown){//pressionar a tecla para esquerda
+        hero.x -= hero.speed * modifier;
+    }
+    if(39 in keysDown){//pressionar a tecla para direita
+        hero.x += hero.speed * modifier;
+    }
+};
