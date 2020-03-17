@@ -1,5 +1,5 @@
 Jogo Lost Decade
-- HTML CSS Javascript
+- HTML, CSS e Javascript
 - babel
 
 - de : [Estevan Maito](https://www.youtube.com/channel/UCIUOmAsotrzdK8VsZuHfVHw)

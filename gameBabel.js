@@ -1,1 +1,1 @@
-document.write('Javascript Aqui');
+document.write('Javascript Aqui.');
