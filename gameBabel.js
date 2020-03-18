@@ -74,6 +74,25 @@ const update = function (modifier){
 
     //os personagens se encostaram
     if(
-        hero.x <= (monster.x + 32) && monster.x <= (hero.x + 32)        
-    )
+        hero.x <= (monster.x + 32) 
+            && monster.x <= (hero.x + 32)        
+            && hero.y <= (monster.y + 32) 
+            && monster.y <= (hero.y + 32)
+    ){
+        ++monsterCaught;
+        reset();
+    }
+};
+
+//renderizar tudo
+const render = function (){
+    if(bgReady){
+        ctx.drawImage(bgImage, 0, 0);
+    }
+    if(heroReady){
+        ctx.drawImage(heroImage, hero.x, hero.y);        
+    }
+    if(monsterReady){
+        ctx.drawImage(monsterImage, monster.x, monster.y);
+    }
 };

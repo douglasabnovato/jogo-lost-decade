@@ -1,4 +1,4 @@
-Jogo Lost Decade
+Jogo Lost Decade - LDG
 - HTML, CSS e Javascript
 - babel
 
