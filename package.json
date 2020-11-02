@@ -2,8 +2,10 @@
   "name": "jogo-lost-decade",
   "version": "1.0.0",
   "description": "Jogo Lost Decade\r - HTML CSS Javascript",
-  "babel":{
-    "presets":["es2015"]
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
   },
   "main": "gameBabel.js",
   "scripts": {
